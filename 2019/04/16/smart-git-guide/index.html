@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#0080CA">
+  
+  <title>smartGit使用指南 | s0urceLab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="都用，都可以用">
+<meta name="keywords" content="FrontEnd">
+<meta property="og:type" content="article">
+<meta property="og:title" content="smartGit使用指南">
+<meta property="og:url" content="http://s0urcelab.github.io/2019/04/16/smart-git-guide/index.html">
+<meta property="og:site_name" content="s0urceLab">
+<meta property="og:description" content="都用，都可以用">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2019/04/16/5cb5825435033.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/16/5cb583dc3c19e.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/16/5cb586e6a1dfd.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/16/5cb5925dcd020.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/16/5cb5925db66d9.png">
+<meta property="og:updated_time" content="2021-03-02T18:37:01.597Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="smartGit使用指南">
+<meta name="twitter:description" content="都用，都可以用">
+<meta name="twitter:image" content="https://i.loli.net/2019/04/16/5cb5825435033.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div class="anime-container">
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+      <div class="anime-item"></div>
+    
+  </div>
+  <div id="header-outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">s0urceLab</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/ppt">PPT</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://s0urcelab.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-smart-git-guide" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/16/smart-git-guide/" class="article-date">
+  <time datetime="2019-04-16T07:00:51.000Z" itemprop="datePublished">2019-04-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      smartGit使用指南
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>都用，都可以用<br><a id="more"></a></p>
+<h2 id="GUI和CLI"><a href="#GUI和CLI" class="headerlink" title="GUI和CLI"></a>GUI和CLI</h2><p><img src="https://i.loli.net/2019/04/16/5cb5825435033.png" alt></p>
+<blockquote>
+<p>GUI：干啥你都敲命令不累么？没有什么是一个按钮不能解决的，如果有，那就再多点一下</p>
+</blockquote>
+<blockquote>
+<p>CLI：1920x1080一共2073600个像素点，在其中找到一个30x30的区域然后移过去点它，不痛苦么？那个跳动的输入光标才是我永远的家</p>
+</blockquote>
+<p><strong>git常用命令数量较少，经常要涉及多个文件的操作，合并多个commit，rebase后解决冲突，都是高度一致的重复性操作，cli灵活的优势在工作流中不太能发挥出来，一个能简化日常操作减少失误的gui很有意义。</strong></p>
+<h2 id="smartGit"><a href="#smartGit" class="headerlink" title="smartGit"></a>smartGit</h2><blockquote>
+<p>市面上的git GUI种类非常多，甚至大家每天使用的git CLI，官网安装包内都自带了一个简易版的GUI（丑，过于简陋）<br>先后使用过几款竞品，目前来看，smartGit能涵盖我的所有需求，暂时就敲定是它了</p>
+</blockquote>
+<p><img src="https://i.loli.net/2019/04/16/5cb583dc3c19e.png" alt></p>
+<p>推荐下载portable绿色版：<br><a href="https://www.syntevo.com/smartgit/download/" target="_blank" rel="noopener">https://www.syntevo.com/smartgit/download/</a></p>
+<h2 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h2><p><img src="https://i.loli.net/2019/04/16/5cb586e6a1dfd.png" alt></p>
+<h3 id="checkout-amp-pull"><a href="#checkout-amp-pull" class="headerlink" title="checkout &amp; pull"></a>checkout &amp; pull</h3><ul>
+<li>checkout：分支管理中找到origin上所需要的分支直接双击即<br>可</li>
+<li>pull：当然是点一下pull按钮啦<br><strong>任何pull动作都会触发同步服务器branch，如新增加的远程分支没有显示可以随便pull一下</strong></li>
+</ul>
+<h3 id="new-branch-amp-commit"><a href="#new-branch-amp-commit" class="headerlink" title="new branch &amp; commit"></a>new branch &amp; commit</h3><ul>
+<li>new branch：当然是点一下add branch按钮啦</li>
+<li>commit：<br>文件预览区内可以看到每个文件的修改部分，<br>discard选项可以直接放弃掉单个文件的改动，<br>ctrl多选后支持仅commit选中文件，<br>勾选amend会直接合并入上一次commit<br><strong>相比CLI省略了add加入暂存区这一步，当然你愿意的话smartGit同样提供了手动加入暂存区功能</strong></li>
+</ul>
+<h3 id="rebase-amp-push"><a href="#rebase-amp-push" class="headerlink" title="rebase &amp; push"></a>rebase &amp; push</h3><ul>
+<li>rebase：保证本地的master分支已经同步到最新，在rebase选择窗里直接选中master即可，如遇冲突会标识冲突文件并等待用户解决，自带的冲突解决器很好用，解决完后continue与CLI无异<br><strong>注意检查rebase后是否有大量异常文件新增或删除，某些时候rebase出错，直接abort重来即可</strong></li>
+<li>push：单分支单人开发大部分时候commit时直接选commit&amp;push比较方便</li>
+</ul>
+<h3 id="conflict-resolve-amp-reset"><a href="#conflict-resolve-amp-reset" class="headerlink" title="conflict resolve &amp; reset"></a>conflict resolve &amp; reset</h3><p><img src="https://i.loli.net/2019/04/16/5cb5925dcd020.png" alt></p>
+<ul>
+<li>conflict：可以使用自带的冲突解决器或者任何你喜欢的方式解决冲突<br>自带解决器会展示theirs, ours, working tree，可以一键选择用哪个版本，或者手动在working tree上编辑</li>
+<li>reset：commit时间线中直接选中commit右键reset即可，和CLI一样默认采用mix，对自己操作没信心的选手推荐先切个分支出来再reset &amp; push</li>
+</ul>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>不差钱选手请购买商业许可，一年仅需99刀，非商业版全功能并可免费使用，但是会不定期弹窗要求你确认非商业使用，不要脸的话可以像我一样给他们写封信哭诉然后领一个不弹窗的许可证</li>
+<li>GUI软件底层还是调用的git CLI，所以理论上和CLI同时使用没有任何问题，甚至rebase到一半换成另一个工具都ok</li>
+<li>项目中配置的eslint是在commit时检查，有error会弹窗抛错等待用户下一步操作，并不会有任何跳过校验的行为</li>
+<li>接上一条，如选择了commit&amp;push，校验会拦截commit操作，但push依然会生效，此时可以修改完amend再push一次或者干脆不要用commit&amp;push</li>
+</ul>
+<h2 id="实战"><a href="#实战" class="headerlink" title="实战"></a>实战</h2><p><img src="https://i.loli.net/2019/04/16/5cb5925db66d9.png" alt><br><strong>有问题请直接联系本文作者或致电syntevo</strong><br><strong>最后祝您身体健康，再见</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://s0urcelab.github.io/2019/04/16/smart-git-guide/" data-id="cklscs990000jxmovlaawjy34" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/FrontEnd/">FrontEnd</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/06/21/js-review-es6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          重读ES6
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/12/js-concurrent-test/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">并发请求小练习</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+  <section id="comments">
+    <!-- gitalk评论框 start -->
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+      const gitalk = new Gitalk({
+        clientID: 'ddd3bf586cb3ad3a9ea9',
+        clientSecret: '53df04f0f4f625cf880f3d4d03a33754af977566',
+        repo: 's0urcelab.github.io',
+        owner: 's0urcelab',
+        admin: ['s0urcelab'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <!-- gitalk评论框 end -->
+  </section>
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/FrontEnd/">FrontEnd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WOT/">WOT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/FrontEnd/" style="font-size: 20px;">FrontEnd</a> <a href="/tags/WOT/" style="font-size: 10px;">WOT</a> <a href="/tags/test/" style="font-size: 15px;">test</a> <a href="/tags/tutorial/" style="font-size: 10px;">tutorial</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/02/js-chrome-extensions-101/">Chrome扩展开发101</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/21/js-review-es6/">重读ES6</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/16/smart-git-guide/">smartGit使用指南</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/12/js-concurrent-test/">并发请求小练习</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/18/js-design-pattern/">JS中的常见设计模式及应用场景</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 s0urce<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/ppt" class="mobile-nav-link">PPT</a>
+  
+</nav>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/anime.min.js"></script>
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
